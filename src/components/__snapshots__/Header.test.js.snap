@@ -4,18 +4,7 @@ exports[`renders without crashing 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
-    robots={
-        Array [
-            Object {
-              "email": "Sincere@april.biz",
-              "id": 1,
-              "name": "Leanne Graham",
-              "username": "Bret",
-            },
-          ]
-    }
-/>,
+  Symbol(enzyme.__unrendered__): <Header />,
   Symbol(enzyme.__renderer__): Object {
     "batchedUpdates": [Function],
     "getNode": [Function],
@@ -29,24 +18,33 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Unknown
-          email="Sincere@april.biz"
-          id={1}
-          name="Leanne Graham"
-/>,
+        <h1
+          className="f1"
+>
+          RoboFriends
+</h1>,
+        <CounterButton />,
       ],
     },
     "ref": null,
     "rendered": Array [
       Object {
         "instance": null,
-        "key": "0",
-        "nodeType": "function",
+        "key": undefined,
+        "nodeType": "host",
         "props": Object {
-          "email": "Sincere@april.biz",
-          "id": 1,
-          "name": "Leanne Graham",
+          "children": "RoboFriends",
+          "className": "f1",
         },
+        "ref": null,
+        "rendered": "RoboFriends",
+        "type": "h1",
+      },
+      Object {
+        "instance": null,
+        "key": undefined,
+        "nodeType": "class",
+        "props": Object {},
         "ref": null,
         "rendered": null,
         "type": [Function],
@@ -61,24 +59,33 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Unknown
-            email="Sincere@april.biz"
-            id={1}
-            name="Leanne Graham"
-/>,
+          <h1
+            className="f1"
+>
+            RoboFriends
+</h1>,
+          <CounterButton />,
         ],
       },
       "ref": null,
       "rendered": Array [
         Object {
           "instance": null,
-          "key": "0",
-          "nodeType": "function",
+          "key": undefined,
+          "nodeType": "host",
           "props": Object {
-            "email": "Sincere@april.biz",
-            "id": 1,
-            "name": "Leanne Graham",
+            "children": "RoboFriends",
+            "className": "f1",
           },
+          "ref": null,
+          "rendered": "RoboFriends",
+          "type": "h1",
+        },
+        Object {
+          "instance": null,
+          "key": undefined,
+          "nodeType": "class",
+          "props": Object {},
           "ref": null,
           "rendered": null,
           "type": [Function],

@@ -24,16 +24,16 @@ ShallowWrapper {
     "props": Object {
       "children": Array [
         <Header />,
-        <SearchBox
+        <Unknown
           searchChange={undefined}
 />,
-        <Scroll>
+        <Unknown>
           <ErrorBoundary>
-                    <CardList
+                    <Unknown
                               robots={Array []}
                     />
           </ErrorBoundary>
-</Scroll>,
+</Unknown>,
       ],
       "className": "tc",
     },
@@ -65,7 +65,7 @@ ShallowWrapper {
         "nodeType": "function",
         "props": Object {
           "children": <ErrorBoundary>
-            <CardList
+            <Unknown
                         robots={Array []}
             />
 </ErrorBoundary>,
@@ -76,7 +76,7 @@ ShallowWrapper {
           "key": undefined,
           "nodeType": "class",
           "props": Object {
-            "children": <CardList
+            "children": <Unknown
               robots={Array []}
 />,
           },
@@ -107,16 +107,16 @@ ShallowWrapper {
       "props": Object {
         "children": Array [
           <Header />,
-          <SearchBox
+          <Unknown
             searchChange={undefined}
 />,
-          <Scroll>
+          <Unknown>
             <ErrorBoundary>
-                        <CardList
+                        <Unknown
                                     robots={Array []}
                         />
             </ErrorBoundary>
-</Scroll>,
+</Unknown>,
         ],
         "className": "tc",
       },
@@ -148,7 +148,7 @@ ShallowWrapper {
           "nodeType": "function",
           "props": Object {
             "children": <ErrorBoundary>
-              <CardList
+              <Unknown
                             robots={Array []}
               />
 </ErrorBoundary>,
@@ -159,7 +159,7 @@ ShallowWrapper {
             "key": undefined,
             "nodeType": "class",
             "props": Object {
-              "children": <CardList
+              "children": <Unknown
                 robots={Array []}
 />,
             },
