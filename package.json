@@ -6,9 +6,7 @@
   "dependencies": {
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
-    "fetch-mock": "^6.3.0",
     "gh-pages": "^1.1.0",
-    "nock": "^9.2.5",
     "react": "^16.3.2",
     "react-dom": "^16.3.2",
     "react-redux": "^5.0.7",
@@ -16,7 +14,6 @@
     "react-test-renderer": "^16.3.2",
     "redux": "^3.7.2",
     "redux-logger": "^3.0.6",
-    "redux-mock-store": "^1.5.1",
     "redux-thunk": "^2.2.0",
     "tachyons": "^4.9.1"
   },
@@ -29,6 +26,8 @@
     "eject": "react-scripts eject"
   },
   "devDependencies": {
-    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.55"
+    "@babel/plugin-transform-react-jsx": "^7.0.0-beta.55",
+    "fetch-mock": "^6.5.2",
+    "redux-mock-store": "^1.5.3"
   }
 }

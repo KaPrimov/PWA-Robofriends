@@ -5,7 +5,7 @@ ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
   Symbol(enzyme.__unrendered__): <ErrorBoundary>
-    <Unknown
+    <Card
         email="Sincere@april.biz"
         id={1}
         name="Leanne Graham"
@@ -19,7 +19,7 @@ ShallowWrapper {
     "unmount": [Function],
   },
   Symbol(enzyme.__node__): Array [
-    <Unknown
+    <Card
       email="Sincere@april.biz"
       id={1}
       name="Leanne Graham"
@@ -27,7 +27,7 @@ ShallowWrapper {
   ],
   Symbol(enzyme.__nodes__): Array [
     Array [
-      <Unknown
+      <Card
         email="Sincere@april.biz"
         id={1}
         name="Leanne Graham"

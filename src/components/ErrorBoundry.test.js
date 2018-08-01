@@ -1,5 +1,5 @@
 import React from 'react';
-import { shallow } from 'enzyme';
+import { shallow, mount } from 'enzyme';
 import ErrorBoundry from './ErrorBoundry';
 import Card from './Card';
 const robots = [{
