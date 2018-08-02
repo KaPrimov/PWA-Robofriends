@@ -1,12 +1,21 @@
-import React, { Component } from 'react';
+import * as React from 'react';
 
 import CardList from './CardList';
 import SearchBox from './SearchBox';
 import Scroll from './Scroll';
 import ErrorBoundry from './ErrorBoundry';
 import Header from './Header';
+import {IRobot} from '../containers/App';
 
-export class MainPage extends Component {
+type MainPageProps = {
+  onRequestRobots: (() => void);
+  robots: IRobot[];
+  searchField: string;
+  onSearchChange?: (() => void);
+  isPending?: boolean;
+}
+
+export class MainPage extends React.Component<MainPageProps> {
   componentDidMount() {
     this.props.onRequestRobots();
   }

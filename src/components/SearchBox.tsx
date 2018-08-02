@@ -1,10 +1,13 @@
-import React from 'react';
+import * as React from 'react';
 
-const SearchBox = ({ searchfield, searchChange }) => {
+type SearchBoxProps = {
+  searchChange?: (() => any)
+}
+
+const SearchBox = ({ searchChange }: SearchBoxProps) => {
   return (
     <div className='pa2'>
       <input
-        aria-label="Search"
         className='pa3 ba b--green bg-lightest-blue'
         type='search'
         placeholder='search robots'
@@ -12,6 +15,6 @@ const SearchBox = ({ searchfield, searchChange }) => {
       />
     </div>
   );
-}
+};
 
 export default SearchBox;

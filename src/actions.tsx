@@ -6,9 +6,14 @@ import {
   REQUEST_ROBOTS_FAILED
  } from './constants'
 
-export const setSearchField = (text) => ({ type: CHANGE_SEARCHFIELD, payload: text })
+export interface IAction {
+  type: string;
+  payload?: any;
+}
 
-export const requestRobots = () => (dispatch) => {
+export const setSearchField = (text): IAction => ({ type: CHANGE_SEARCHFIELD, payload: text })
+
+export const requestRobots  = (): any  => (dispatch): void   => {
   dispatch({ type: REQUEST_ROBOTS_PENDING })
   apiCall('https://jsonplaceholder.typicode.com/users')
     .then(data => dispatch({ type: REQUEST_ROBOTS_SUCCESS, payload: data }))

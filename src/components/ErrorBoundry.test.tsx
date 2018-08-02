@@ -1,4 +1,4 @@
-import React from 'react';
+import * as React from 'react';
 import { shallow } from 'enzyme';
 import ErrorBoundry from './ErrorBoundry';
 import Card from './Card';

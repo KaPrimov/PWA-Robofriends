@@ -1,15 +1,25 @@
-import React from 'react';
+import * as React from 'react';
 import { shallow } from 'enzyme';
 import MainPage from './MainPage';
+import {IRobot} from '../containers/App';
 
 let wrapper;
 
+type MainPageProps = {
+    onRequestRobots: (() => void);
+    robots: IRobot[];
+    searchField: string;
+    onSearchChange: (() => void);
+    isPending: boolean;
+  }
+
 beforeEach(() => {
-    const mockProps = {
+    const mockProps: MainPageProps = {
         onRequestRobots: jest.fn(),
         robots: [],
         searchField: '',
-        isPending: false
+        isPending: false,
+        onSearchChange: jest.fn()
     }
     wrapper = shallow(<MainPage {...mockProps} />)
 })
@@ -27,7 +37,8 @@ it('should not find robots', () => {
             id: 1
         }],
         searchField: 'Ivan',
-        isPending: false
+        isPending: false,
+        onSearchChange: jest.fn()
     }
     wrapper = shallow(<MainPage {...mockProps} />)
     expect(wrapper.instance().filterRobots()).toEqual([]);
@@ -48,7 +59,8 @@ it('should find robot', () => {
                 id: 2
             }],
         searchField: 'Ivan',
-        isPending: false
+        isPending: false,
+        onSearchChange: jest.fn()
     }
     wrapper = shallow(<MainPage {...mockProps} />)
     expect(wrapper.instance().filterRobots()).toEqual([{
@@ -73,7 +85,8 @@ it('should find two robots', () => {
                 id: 2
             }],
         searchField: 'Pesho',
-        isPending: false
+        isPending: false,
+        onSearchChange: jest.fn()
     }
     wrapper = shallow(<MainPage {...mockProps} />)
     expect(wrapper.instance().filterRobots()).toEqual([
@@ -94,7 +107,8 @@ it('should write loading when loading', () => {
         onRequestRobots: jest.fn(),
         robots: [],
         searchField: '',
-        isPending: true
+        isPending: true,
+        onSearchChange: jest.fn()
     };
     let wrapper = shallow(<MainPage {...mockProps}/>);
     const element = wrapper.find('h1').at(0);
