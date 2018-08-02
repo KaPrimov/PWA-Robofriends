@@ -12,6 +12,7 @@ const SearchBox = ({ searchChange }: SearchBoxProps) => {
         type='search'
         placeholder='search robots'
         onChange={searchChange}
+        value={searchfield}
       />
     </div>
   );

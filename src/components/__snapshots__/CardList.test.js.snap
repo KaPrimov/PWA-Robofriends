@@ -4,7 +4,7 @@ exports[`renders without crashing 1`] = `
 ShallowWrapper {
   "length": 1,
   Symbol(enzyme.__root__): [Circular],
-  Symbol(enzyme.__unrendered__): <Unknown
+  Symbol(enzyme.__unrendered__): <CardList
     robots={
         Array [
             Object {
@@ -29,7 +29,7 @@ ShallowWrapper {
     "nodeType": "host",
     "props": Object {
       "children": Array [
-        <Unknown
+        <Card
           email="Sincere@april.biz"
           id={1}
           name="Leanne Graham"
@@ -61,7 +61,7 @@ ShallowWrapper {
       "nodeType": "host",
       "props": Object {
         "children": Array [
-          <Unknown
+          <Card
             email="Sincere@april.biz"
             id={1}
             name="Leanne Graham"
